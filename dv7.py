@@ -7,7 +7,7 @@ Bitcoin_en_satoshis = 100000000
 
 info_mercados = requests.get("https://api.crypto-bridge.org/api/v1/ticker")
 info_mercados = info_mercados.json()
-valor_dv7_en_btc = info_mercados['51']['last']
+valor_dv7_en_btc = info_mercados[51]['last']
 
 info_btc = requests.get("https://api.coinmarketcap.com/v1/ticker/")
 info_btc = info_btc.json()
